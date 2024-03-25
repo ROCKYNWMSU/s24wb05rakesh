@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+
+  // Inserting the search results section
+  .container-fluid
+    .row
+      each earphones in results
+        .col-sm-2 
+          p Earphones Brand: #{earphones.brand}
+          p Size: #{earphones.size}
+          p Price: $#{earphones.cost}
